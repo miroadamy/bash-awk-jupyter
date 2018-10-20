@@ -5,8 +5,8 @@ USER root
 RUN apt-get update && apt-get install -yq --no-install-recommends \
     php-cli php-dev php-pear \
     pkg-config \
-    && apt-get clean
-#    rm -rf /var/lib/apt/lists/*
+    && apt-get clean 
+#    && rm -rf /var/lib/apt/lists/*
 
 # install zeromq and zmq php extension 
 #RUN wget https://github.com/zeromq/zeromq4-1/releases/download/v4.1.5/zeromq-4.1.5.tar.gz && \
@@ -54,7 +54,8 @@ RUN chown -R $NB_USER /home/$NB_USER && \
     rm -rf /home/$NB_USER/.local/share/jupyter
 
 # install java jre for h2o
-RUN apt-get install -yq openjdk-8-jre
+RUN apt-get install -yq openjdk-8-jre 
+RUN apt-get install -y gawk
 
 # Reset user from jupyter/base-notebook
 USER $NB_USER

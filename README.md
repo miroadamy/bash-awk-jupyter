@@ -11,9 +11,11 @@ I decided to finally teach myself Awk and document the process in [Jupyter noteb
 ## AWK outline
 
 1. [Basics of Awk](Awk-tutorial-01-basics.ipynb)
-2. [Built-in Functions](Awk-tutorial-02-built-in-functions.ipynb)
-3. [Arrays](Awk-tutorial-03-arrays.ipynb)
-4. ...
+2. [Regular expressions](Awk-tutorial-02-regular-expressions.ipynb)
+3. [Input processing](Awk-tutorial-03-reading-input-files.ipynb)
+X. [Built-in Functions](Awk-tutorial-0X-built-in-functions.ipynb)
+X. [Arrays](Awk-tutorial-0X-arrays.ipynb)
+X. ...
 
 ## bash outline
 
